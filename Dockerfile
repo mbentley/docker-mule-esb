@@ -7,8 +7,8 @@ MAINTAINER Matt Bentley <nbentley@mbentley.net>
 RUN apk --no-cache add zip
 
 # add files
-COPY mule-deploy.properties /mule-deploy.properties
-COPY HelloWorld.xml /HelloWorld.xml
+COPY apps/mule-hello/mule-deploy.properties /mule-deploy.properties
+COPY apps/mule-hello/HelloWorld.xml /HelloWorld.xml
 
 # create zip file
 RUN zip mule-hello.zip mule-deploy.properties HelloWorld.xml
