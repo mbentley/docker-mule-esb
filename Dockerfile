@@ -1,4 +1,4 @@
-# Multi-stage build to package up zip file
+### Multi-stage build to package up zip file and create a Mule ESB image with hello world
 # 1st stage - Create zip file
 FROM alpine:latest as build
 MAINTAINER Matt Bentley <nbentley@mbentley.net>
