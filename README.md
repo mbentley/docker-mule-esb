@@ -6,6 +6,11 @@ Mule ESB Hello World demo for the Indianapolis MuleSoft Meetup March 22, 2018
 ## Workflow
 Demo built from the hello world example found here: https://dzone.com/articles/mule-esb-docker
 
+### copy files to dev space
+```
+$ cp HelloWorld.xml mule-deploy.properties dev-apps/mule-hello/
+```
+
 ### build docker image
 ```
 $ docker build -t mbentley/mule-esb .
