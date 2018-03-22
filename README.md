@@ -22,9 +22,14 @@ $ docker build -t mbentley/mule-esb .
 $ docker run -it --rm --name helloworld -p 8181:8181 -v ${PWD}/dev-apps:/opt/mule/apps mbentley/mule-esb
 ```
 
-### test connectivity to my hello world app; modify the app `dev-apps/mule-hello/HelloWorld.xml` and watch it redeploy
+### test connectivity to my hello world app
 ```
 $ watch curl -s http://localhost:8181/
+```
+
+### modify the app and watch it redeploy
+```
+$ vi dev-apps/mule-hello/HelloWorld.xml
 ```
 
 ### copy developed code to repo
