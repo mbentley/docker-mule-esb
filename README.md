@@ -38,5 +38,5 @@ $ docker run -it --rm --name helloworld -p 8181:8181 mbentley/mule-esb:new
 
 ### test connectivity to my hello world app
 ```
-$ curl -v http://localhost:8181/; echo
+$ watch curl -s http://localhost:8181/
 ```
